@@ -1,0 +1,233 @@
+@charset "utf-8";
+html {
+	background-image: url(close-up-of-photography-negative_23-2148132323.jpg);
+    background-size: 100%;
+	min-height: 100%;
+	font-family: sans-serif;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	margin: 0;
+	padding: 0 15px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+
+a:hover {
+	text-decoration: none;
+    color: white;
+}
+:focus {
+	outline: none;
+}
+img {
+	border: 0;
+}
+h1 {
+	margin-top: 0;
+    color: white;
+}
+p1{
+animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.header {
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	margin: 0 auto 30px;
+	padding: 30px 0 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.logo {
+	margin: -10px 10px 10px 0;
+	display: flex;
+	flex: none;
+	align-items: center;
+}
+.logo:before,
+.logo:after {
+	display: block;
+}
+.logo:before {
+    content:'';
+	background-image: url(%D0%BB%D0%BE%D0%B3%D0%BE.jpg);
+	width: 50px;
+	height: 50px;
+	margin: 0 10px 0 20px;
+	border-radius: 50%;
+}
+.logo:after {
+    content: 'kavinskaya.m';
+	background: #ccc;
+	width: 140px;
+	height: 30px;
+    color: white;
+    font-size: 22px;
+}
+.nav {
+	margin: -5px 0 0 -5px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.nav-itm {
+	background:#ccc;
+	width: 130px; 
+	height: 50px;
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+	margin: 5px 0 0 5px;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main {
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	margin: auto;
+	flex: auto;
+	box-sizing: border-box;
+}
+.box {
+	font-size: 35px;
+	line-height: 1.5;
+	font-style: italic;
+	margin: 0 0 40px -50px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.box-base {
+	margin-left: 50px;
+	flex: 1 0 430px;
+    color: white;
+}
+.box-side {
+	margin-left: 50px;
+	flex: none;
+    transition: all 1s;
+}
+.box-side:hover {
+	margin-left: 50px;
+	flex: none;
+    transform: scale(1.2);
+}
+.box-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content {
+	margin-bottom: 30px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.banners {
+	flex: 1 1 200px;
+}
+.banner {
+	width: 100%;
+	min-width: 100px;
+	min-height: 200px;
+	color: #eee;
+	margin: 0 0 30px 0;
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.posts {
+	margin: 0 0 30px 30px;
+	flex: 1 1 200px;
+    color: white;
+}
+.post {}
+.comments {
+	margin: 0 0 30px 30px;
+	flex: 1 1 200px;
+    color: white;
+}
+.comment {
+	display: -webkit-flex;
+	display: flex;
+}
+.comment-side {
+	padding-right: 20px;
+	flex: none;
+}
+.comment-base {
+	flex: auto;
+}
+.comment-avatar {
+	background: #ccc;
+	width: 50px;
+	height: 50px;
+    border: 5px solid white;
+}
+.footer {
+	background:#ccc;
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	color: white;
+	margin: auto;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+	.banners {
+		margin-left: -30px;
+		display: -webkit-flex;
+		display: flex;
+		flex-basis: 100%;
+	}
+	.banner {
+		margin-left: 30px;
+	}
+	.posts {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content {
+		display: block;
+	}
+	.banners {
+		margin: 0;
+		display: block;
+	}
+	.banner {
+		margin-left: 0;
+	}
+	.comments {
+		margin: 0;
+	}
+}
